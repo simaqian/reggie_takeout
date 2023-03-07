@@ -28,6 +28,7 @@ function setmealListApi(data) {
 function cartListApi(data) {
     return $axios({
         'url': '/shoppingCart/list',
+        // 'url': '/front/CartData.json',
         'method': 'get',
         params:{...data}
     })

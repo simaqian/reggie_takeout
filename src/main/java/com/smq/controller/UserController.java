@@ -31,7 +31,8 @@ public class UserController {
         if(!StringUtils.isEmpty(phone)){
             String code = String.valueOf(ValidateCodeUtils.generateValidateCode(4));
             log.info("发送的消息为" + code + "手机号为" + phone);
-            SMSUtils.sendMessage("瑞吉外卖","SMS_272515965",phone,code);
+           //这个已经配置好了，可以用的
+            // SMSUtils.sendMessage("瑞吉外卖","SMS_272515965",phone,code);
             session.setAttribute(phone,code);
             log.info("手机信息发送成功");
             return Result.success("手机验证码短信发送成功");
