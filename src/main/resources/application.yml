@@ -7,6 +7,9 @@ spring:
     username: root
     password: "1234"
     type: com.alibaba.druid.pool.DruidDataSource
+  cache:
+    redis:
+      time-to-live: 1800000
 
   redis:
     host: 192.168.56.10
@@ -21,3 +24,4 @@ reggie:
 #  global-config:
 #    db-config:
 #      id-type: assign_id
+
